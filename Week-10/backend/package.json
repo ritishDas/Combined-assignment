@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "a web app build with create gardener",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node build/backend/server.js",
+    "dev": "cross-env NODE_ENV=development tsx watch src/backend/server.ts",
+    "build": "tsc && node buildHelper.js"
+  },
+  "keywords": [],
+  "author": "ritishDas",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.5.0",
+    "nodemailer": "^8.0.6",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.2",
+    "@types/nodemailer": "^8.0.0",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

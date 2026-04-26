@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "Bundler",
+
+    "checkJs": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "/static/*": ["src/frontend/static/*"]
+    },
+
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/frontend/static/**/*.js"]
+}
+
